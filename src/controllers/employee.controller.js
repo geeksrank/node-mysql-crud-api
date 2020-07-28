@@ -29,7 +29,7 @@ exports.createNewEmployee = (req, res) =>{
     const employeeReqData = new EmployeeModel(req.body);
     console.log('employeeReqData', employeeReqData);
     // check null
-    if(req.body.contructor === Object && Object.keys(req.body).length === 0){
+    if(req.body.constructor === Object && Object.keys(req.body).length === 0){
         res.send(400).send({success: false, message: 'Please fill all fields'});
     }else{
         EmployeeModel.createEmployee(employeeReqData, (err, employee)=>{
@@ -45,7 +45,7 @@ exports.updateEmployee = (req, res)=>{
     const employeeReqData = new EmployeeModel(req.body);
     console.log('employeeReqData update', employeeReqData);
     // check null
-    if(req.body.contructor === Object && Object.keys(req.body).length === 0){
+    if(req.body.constructor === Object && Object.keys(req.body).length === 0){
         res.send(400).send({success: false, message: 'Please fill all fields'});
     }else{
         EmployeeModel.updateEmployee(req.params.id, employeeReqData, (err, employee)=>{
