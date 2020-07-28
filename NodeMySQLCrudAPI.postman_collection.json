@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "eda3479b-3bad-4de0-b2be-45c5a5ecce87",
+		"name": "NodeMySQLCrudAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Employees List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employee/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Rohit",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Gupta",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rohit@test.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0123456787",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "Google",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "Software Engg",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "50000",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"description": "1=Active, 0=Inactive",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employee/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Rahul",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Gupta",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rahul@test.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0123456787",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "Google",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "Software Engg",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "50000",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"description": "1=Active, 0=Inactive",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employee/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employee/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
